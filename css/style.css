@@ -1,0 +1,76 @@
+/* Variablen */
+:root {
+  --color-bg: #faf8f5;
+  --color-text: #1f1d1a;
+  --color-muted: #6b665e;
+  --color-accent: #b4532a;
+
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --step-0: 1rem;
+  --step-1: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.4rem);
+
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+  --space-xl: 4rem;
+
+  --max-width: 70rem;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, p { margin: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Basis */
+body {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  hyphens: auto;
+}
+
+h1 { font-size: var(--step-2); line-height: 1.2; margin-bottom: var(--space-m); }
+p { max-width: 65ch; }
+
+a { color: var(--color-accent); }
+:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+/* Layout */
+.container {
+  width: min(100% - 2 * var(--space-m), var(--max-width));
+  margin-inline: auto;
+}
+
+main { padding-block: var(--space-xl); }
+
+.site-header,
+.site-footer { padding-block: var(--space-m); }
+
+.site-footer { color: var(--color-muted); font-size: 0.875rem; }
+
+.logo {
+  font-weight: 700;
+  font-size: var(--step-1);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* Hilfsklassen */
+.skip-link {
+  position: absolute;
+  left: var(--space-m);
+  top: -3rem;
+  padding: var(--space-s) var(--space-m);
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+.skip-link:focus { top: var(--space-m); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
