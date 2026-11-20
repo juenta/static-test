@@ -283,6 +283,16 @@ a:hover { color: var(--color-accent-dark); }
   gap: var(--space-s);
 }
 
+.footer-links { display: flex; gap: var(--space-m); }
+.footer-links a { color: var(--color-muted); }
+.footer-links a:hover,
+.footer-links a[aria-current="page"] { color: var(--color-accent); }
+
+/* Rechtstexte */
+.legal { max-width: 46rem; }
+.legal h1 { margin-bottom: var(--space-l); }
+.legal h2 { font-size: var(--step-1); margin-top: var(--space-l); }
+
 /* Hilfsklassen */
 .skip-link {
   position: absolute;
