@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Static – Testprojekt</title>
-  <meta name="description" content="Kleines Testprojekt mit HTML, CSS und JavaScript.">
+  <title>My CMS Solution – Webentwicklung aus Köln</title>
+  <meta name="description" content="Günther Stuckardt: Layout-Umsetzung, Frontend-Entwicklung und eigene CMS-Lösungen. Webentwicklung seit 1999.">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -12,19 +12,50 @@
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="./">Static</a>
+    <div class="container header-inner">
+      <a class="logo" href="./">my<span>cms</span>solution</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav">
+          <li><a href="#ueber">Über mich</a></li>
+          <li><a class="nav-cta" href="mailto:info@mycmssolution.de">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main id="inhalt" class="container">
-    <h1>Testprojekt</h1>
-    <p>Die Grundstruktur steht. Inhalte folgen.</p>
+  <main id="inhalt">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Webentwicklung · Köln · seit 1999</p>
+        <h1>Layouts sauber umgesetzt. CMS&nbsp;passend gebaut.</h1>
+        <p class="lead">Ich bin Günther Stuckardt. Ich setze Designs in Frontend-Code um, programmiere Datenbank&shy;anwendungen mit PHP und entwickle CMS-Lösungen, die zum Projekt passen.</p>
+        <a class="button" href="mailto:info@mycmssolution.de">Projekt anfragen</a>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Eckdaten">
+      <div class="container facts-grid">
+        <div class="fact"><span class="fact-num">1999</span><span class="fact-text">erste Webprojekte</span></div>
+        <div class="fact"><span class="fact-num">2004</span><span class="fact-text">Gründung von My CMS Solution</span></div>
+        <div class="fact"><span class="fact-num">2008</span><span class="fact-text">seitdem für New Media &amp; Design, Stäfa (CH)</span></div>
+      </div>
+    </section>
+
+    <section id="ueber" class="section">
+      <div class="container split">
+        <h2>Über mich</h2>
+        <div class="prose">
+          <p>Angefangen habe ich als Fernmeldetechniker. Danach kamen das Fachabitur in Elektrotechnik und die Weiterbildung zum Mediengestalter.</p>
+          <p>Vier Jahre war ich bei der successnet AG in München angestellt. 2004 habe ich mich mit My CMS Solution selbstständig gemacht. Seitdem arbeite ich für Kunden aus ganz unterschiedlichen Branchen, allein oder im Team.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span data-year>2026</span> static.mycmssolution.de</p>
+    <div class="container footer-inner">
+      <p>&copy; <span data-year>2026</span> GS Programmierung · Layout-Umsetzungen · Webentwicklung</p>
+      <p><a href="mailto:info@mycmssolution.de">info@mycmssolution.de</a></p>
     </div>
   </footer>
 </body>
