@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My CMS Solution – Webentwicklung aus Köln</title>
+  <meta name="description" content="Günther Stuckardt: Layout-Umsetzung, Frontend-Entwicklung und eigene CMS-Lösungen. Webentwicklung seit 1999.">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="preload" href="fonts/dmsans-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="My CMS Solution, zur Startseite">
+        <span class="logo-mark" aria-hidden="true">gs</span>
+        <span class="logo-text">my cms solution</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav">
+          <li><a href="#ueber">Über mich</a></li>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#referenzen">Referenzen</a></li>
+          <li><a class="nav-cta" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="progress" aria-label="Abschnitte">
+    <ol>
+      <li><a href="#start" data-progress="start"><span>Start</span></a></li>
+      <li><a href="#ueber" data-progress="ueber"><span>Über mich</span></a></li>
+      <li><a href="#leistungen" data-progress="leistungen"><span>Leistungen</span></a></li>
+      <li><a href="#referenzen" data-progress="referenzen"><span>Referenzen</span></a></li>
+      <li><a href="#kontakt" data-progress="kontakt"><span>Kontakt</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="inhalt">
+    <section id="start" class="hero">
+      <div class="parallax" data-speed="0.15" aria-hidden="true"><div class="orb orb-1"></div></div>
+      <div class="parallax" data-speed="0.3" aria-hidden="true"><div class="ring"></div></div>
+      <div class="bouncer" aria-hidden="true">
+        <div class="orb orb-2"></div>
+        <div class="bounce-shadow"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <p class="kicker intro" style="--d: 0">Webentwicklung · Köln · seit 1999</p>
+        <h1>
+          <span class="line"><span class="intro" style="--d: 1">Layouts sauber umgesetzt<span class="gold">.</span></span></span>
+          <span class="line"><span class="intro gold shimmer" style="--d: 2">CMS passend gebaut.</span></span>
+        </h1>
+        <p class="lead intro" style="--d: 3">Ich bin Günther Stuckardt. Ich setze Designs in Frontend-Code um, programmiere Datenbank&shy;anwendungen mit PHP und entwickle CMS-Lösungen, die zum Projekt passen.</p>
+        <div class="hero-actions intro" style="--d: 4">
+          <a class="button" href="#kontakt">Projekt anfragen</a>
+          <a class="button button-light" href="#referenzen">Referenzen ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Eckdaten">
+      <div class="container facts-grid">
+        <div class="fact reveal"><span class="fact-num">1999</span><span class="fact-text">erste Webprojekte</span></div>
+        <div class="fact reveal"><span class="fact-num">2004</span><span class="fact-text">Gründung von My CMS Solution</span></div>
+        <div class="fact reveal"><span class="fact-num">2008</span><span class="fact-text">seitdem für New Media &amp; Design, Stäfa (CH)</span></div>
+      </div>
+    </section>
+
+    <section id="ueber" class="section">
+      <div class="container">
+        <h2 class="reveal reveal-heading">Über <span class="gold">mich.</span></h2>
+        <div class="about-card reveal">
+          <p>Angefangen habe ich als Fernmeldetechniker. Danach kamen das Fachabitur in Elektrotechnik und die Weiterbildung zum Mediengestalter.</p>
+          <p>Vier Jahre war ich bei der successnet AG in München angestellt. 2004 habe ich mich mit My CMS Solution selbstständig gemacht. Seitdem arbeite ich für Kunden aus ganz unterschiedlichen Branchen, allein oder im Team.</p>
+          <dl class="about-facts">
+            <div><dt>Sitz</dt><dd>Köln</dd></div>
+            <div><dt>Selbstständig</dt><dd>seit 2004</dd></div>
+            <div><dt>Arbeitsweise</dt><dd>allein oder im Team</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen" class="section section-soft">
+      <div class="container">
+        <h2 class="reveal reveal-heading">Was ich <span class="gold">mache.</span></h2>
+        <ol class="services">
+          <li class="card reveal">
+            <span class="card-num">01</span>
+            <h3>Konzeption und Programmierung</h3>
+            <p>Webseiten von der Planung bis zum Livegang, allein oder als Teil eines Teams.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-num">02</span>
+            <h3>Layout-Umsetzung und Frontend</h3>
+            <p>Aus Entwürfen wird responsiver, sauberer HTML-, CSS- und JavaScript-Code.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-num">03</span>
+            <h3>Datenbankanwendungen mit PHP</h3>
+            <p>Anwendungen auf Basis von PHP und MySQL, passend zu Ihren Abläufen.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-num">04</span>
+            <h3>Eigene CMS-Lösungen</h3>
+            <p>Ein Redaktionssystem, das genau das kann, was Ihr Projekt braucht. Alternativ WordPress.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-num">05</span>
+            <h3>Technische Betreuung</h3>
+            <p>Ansprechpartner für Pflege, Anpassungen und Fragen nach dem Start.</p>
+          </li>
+          <li class="card card-tech reveal">
+            <span class="card-num">Werkzeuge</span>
+            <ul class="tech">
+              <li>HTML5</li><li>CSS3</li><li>LESS</li><li>JavaScript</li><li>jQuery</li>
+              <li>Bootstrap</li><li>PHP</li><li>MySQL</li><li>Twig</li><li>WordPress</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="referenzen" class="section">
+      <div class="container">
+        <h2 class="reveal reveal-heading">Für wen ich <span class="gold">arbeite.</span></h2>
+        <div class="ref-grid">
+          <div class="ref-feature reveal reveal-left">
+            <span class="card-num">Seit 2008</span>
+            <h3>New Media &amp; Design GmbH, Stäfa (Schweiz)</h3>
+            <p>Feste Zusammenarbeit mit der Agentur, unter anderem am individuell programmierten Onlineshop <a href="https://www.gfellex.ch" target="_blank" rel="noopener noreferrer">gfellex.ch</a>.</p>
+          </div>
+          <ul class="ref-list">
+            <li class="reveal"><a href="https://sexualtherapie-theuerkauf.de" target="_blank" rel="noopener noreferrer">sexualtherapie-theuerkauf.de</a></li>
+            <li class="reveal"><a href="https://beatemeuth.de" target="_blank" rel="noopener noreferrer">beatemeuth.de</a></li>
+            <li class="reveal"><a href="https://wohngut-olching.de" target="_blank" rel="noopener noreferrer">wohngut-olching.de</a></li>
+            <li class="reveal"><a href="https://blank-bau-consult.de" target="_blank" rel="noopener noreferrer">blank-bau-consult.de</a></li>
+            <li class="reveal"><a href="https://anderer-arch.de" target="_blank" rel="noopener noreferrer">anderer-arch.de</a></li>
+            <li class="reveal"><a href="https://hp-versorgungstechnik.de" target="_blank" rel="noopener noreferrer">hp-versorgungstechnik.de</a></li>
+            <li class="reveal"><a href="https://advitos.com" target="_blank" rel="noopener noreferrer">advitos.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <div class="contact-panel reveal reveal-scale">
+          <div class="orb orb-contact float" aria-hidden="true"></div>
+          <p class="kicker">Kontakt</p>
+          <h2>Sie haben ein Projekt?<br><span class="gold">Schreiben Sie mir.</span></h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">E-Mail</span>
+              <a href="mailto:info@mycmssolution.de">info@mycmssolution.de</a>
+            </li>
+            <li>
+              <span class="contact-label">Telefon</span>
+              <a href="tel:+4922134892206">0221 34892206</a>
+            </li>
+            <li>
+              <span class="contact-label">Standort</span>
+              <span class="contact-value">Köln</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-year>2026</span> GS Programmierung · Layout-Umsetzungen · Webentwicklung</p>
+      <ul class="footer-links">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
